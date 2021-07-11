@@ -1,0 +1,13 @@
+ID = [1234,4321,9876,8236,7284]
+current = ['H231','G487','H897','A827','N827']
+future = ['G487','N827','H231','A827','H897']
+
+for x in range(len(future)):
+    for y in range(len(current)):
+        if future[x] == current[y]:
+            print('Match found: Student ID {:4} currently lives in Student ID {:4} room'.format(ID[y],ID[x]))
+            
+'''
+Instead of printing the Student ID numbers for the matches, it would print a 
+hyperlink leading to the pictures that the other student posted.
+'''
