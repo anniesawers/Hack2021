@@ -307,6 +307,7 @@ label {
 
 button {
   border-radius: 0;
+  float: right;
 }
 
 button:focus:not(:focus-visible) {
@@ -7044,6 +7045,10 @@ textarea.form-control-lg {
 
 .ms-auto {
   margin-left: auto !important;
+}
+
+.ms-center {
+  margin: 0 auto;
 }
 
 .p-0 {
