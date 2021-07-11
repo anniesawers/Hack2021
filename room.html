@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                 <li class="nav-item"><a class="nav-link" href="pictures.html">Submit Pictures</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="room.html">Request Room</a></li>
                 <li class="nav-item"><a class="nav-link" href="#!">Troubleshoot</a></li>
@@ -34,8 +36,7 @@
 <section class="py-5 border-bottom">
     <div class="container px-5 my-5 px-5">
         <div class="text-center mb-5">
-            <h2 class="fw-bolder"> Follow the instructions below to unlock pictures of your new dorm room! </h2>
-            <p class="lead mb-0"> First, sign in with your Duke NetID and password to confirm your status as a current Duke student.</p>
+            <h2 class="fw-bolder">Select a room to see images of your future room.</h2>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
@@ -44,7 +45,7 @@
                     <div class="card-body p-4">
                         <div class="d-flex">
                             <div class="ms-4">
-                                <p class="mb-1">Where will you be living next year?</p>
+                                <p class="mb-1">Where are you currently living?</p>
                                 <label for="cars">Dorm:</label>
                                 <select name="cars" id="cars">
                                     <option value="volvo">Keohane 4A</option>
@@ -75,6 +76,61 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Testimonial 2-->
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="ms-4">
+                                <p class="mb-1">Whole Room (from door) </p>
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="ms-4">
+                                <p class="mb-1">Closet</p>
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="ms-4">
+                                <p class="mb-1">Whole Room (from window)</p>
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="ms-4">
+                                <p class="mb-1">Any other pictures you think would be helpful!</p>
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Submit button-->
+                <div>
+                    <button class="button" type="submit">
+                        Submit
+                    </button>
                 </div>
             </div>
         </div>
